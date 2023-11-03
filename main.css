@@ -10,3 +10,17 @@ body{
   font-family: Arial, Helvetica, sans-serif;
   background-color: white;
 }
+
+header{
+  display:block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgb(13, 130, 239);
+  padding: 10px;
+}
+.search-bar-container{
+  display: inline;
+  
+}
