@@ -1,26 +1,57 @@
 *{
   margin: 0;
-}
-
-html, body{
-  height: 100%
-}
-
-body{
+  color: white;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: white;
+}
+ 
+body{
+background-color: white;
+}
+ 
+header{
+  width: 100%;
+  background-color: rgba(13, 13, 107, 0.979);
+  padding: 20px;
+  text-align: center;
+  font-size: 50px;
+}
+  
+.card{
+  width: 90%;
+  max-width: 500px;
+  background: linear-gradient(50deg, black, blue);
+  margin: 100px auto 0;
+  border-radius: 20px;
+  padding: 60px 35px;
+  text-align: center;
 }
 
-header{
-  display:block;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: rgb(13, 130, 239);
-  padding: 10px;
+.searchBarContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin: 0 auto 0;
 }
-.search-bar-container{
-  display: inline;
-  
+.searchBarContainer input{
+  color: black;
+  border: 0;
+  outline: 0;
+  border-radius: 20px;
+  padding: 10px, 25px;
+  margin-right: 16px;
+  height: 20px;
+}
+
+.searchBarContainer button{
+  border: 0;
+  outline: 0;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+}
+
+.searchBarContainer button img{
+  width: 20px;
 }
