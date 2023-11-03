@@ -6,3 +6,4 @@ async function checkWeather(){
     let data = await response.json()
     
 }
+
