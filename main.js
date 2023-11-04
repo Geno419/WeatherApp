@@ -24,4 +24,4 @@ searchBTN.addEventListener("click", ()=>{
     checkWeather(locationSearch.value);
 })
 
-checkWeather(;
+checkWeather();
