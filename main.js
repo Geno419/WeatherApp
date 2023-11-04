@@ -17,6 +17,7 @@ async function checkWeather(city){
     document.querySelector(".maxTemp").innerHTML= 'max: ' + data.main.temp_max + '&#8451';
     document.querySelector(".humidity").innerHTML= data.main.humidity + '&#37';
     document.querySelector(".weatherDesc").innerHTML= data.weather[0].description;
+
     
 }
 searchBTN.addEventListener("click", ()=>{

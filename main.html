@@ -29,6 +29,12 @@
         </div>
         <p class="weatherDesc">Cloudy</p>
         <p class="humidity">90&#37;</p>
+    <p class="date"> 
+      <script> 
+    document.querySelector('.date').innerHTML= new Date().toLocaleDateString('en-GB', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+    </script>
+    </p> <!-- ...gets the date... --> 
+
 
       </aside>
     </div>
