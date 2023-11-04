@@ -60,21 +60,21 @@ header {
 
 .locationInfo{
   color: white;
-  display: flex; /* put the locationName and image side by side*/
+  display: flex; /* puts the locationName and image side by side*/
   justify-content: center;
   align-items: center;
   width: 50%;
-  margin: 30px auto 0; /* spacing of the locationinfo div*/
+  margin: 30px auto 0; /* spacing of the locationinfo div from the top*/
 }
 
 .minMaxTemp{
   color: white;
-  display: flex; /* put the min/ max side by side*/
+  display: flex; /* puts the min/max side by side*/
   justify-content: center;
   align-items: center;
   width: 50%;
   margin: 0 auto 0; 
 }
 .minTemp{
-  margin-right: 10px;
+  margin-right: 10px; /* puts a space between them min/max side by side*/
 }

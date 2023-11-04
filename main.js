@@ -17,7 +17,16 @@ async function checkWeather(city){
     document.querySelector(".maxTemp").innerHTML= 'max: ' + data.main.temp_max + '&#8451';
     document.querySelector(".humidity").innerHTML= data.main.humidity + '&#37';
     document.querySelector(".weatherDesc").innerHTML= data.weather[0].description;
-
+    document.querySelector('.date').innerHTML= new Date(new Date().getTime() + data.timezone * 1000).toLocaleDateString('en-GB', { 
+ 
+      //weekday: 'long',
+      //year: 'numeric', 
+      month: 'long', 
+      day: 'numeric',
+      hour: 'numeric',
+      minute: 'numeric',
+      //second: 'numeric',
+      hour12: true,});
     
 }
 
@@ -32,9 +41,4 @@ searchBtn.addEventListener("click", ()=>{
     checkWeather(locationSearch.value);
 })
 
-<<<<<<< HEAD
-checkWeather();
-
-=======
-checkWeather();
->>>>>>> parent of 4eeb28c (all set)
+checkWeather("London");
