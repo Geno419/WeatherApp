@@ -2,7 +2,7 @@ const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q="
 const apiKey = "7af2e81ac3d7e59d7be831cd65898d46";
 
 const locationSearch = document.querySelector(".searchBarContainer input");
-const searchBTN = document.querySelector(".searchBarContainer button");
+const searchBtn = document.querySelector(".searchBarContainer button");
 
 async function checkWeather(city){
     const response = await fetch(apiUrl + city + '&appid=' + apiKey);
@@ -20,8 +20,21 @@ async function checkWeather(city){
 
     
 }
-searchBTN.addEventListener("click", ()=>{
+
+locationSearch.addEventListener("keydown", (event) =>{
+    if (event.key === "Enter") {
+      event.preventDefault(); 
+      checkWeather(locationSearch.value);
+    }
+  });
+
+searchBtn.addEventListener("click", ()=>{
     checkWeather(locationSearch.value);
 })
 
+<<<<<<< HEAD
 checkWeather();
+
+=======
+checkWeather();
+>>>>>>> parent of 4eeb28c (all set)
