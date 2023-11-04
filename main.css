@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: white;
+  background-color: rgb(150, 135, 135);
 }
 
 header {
@@ -19,7 +19,7 @@ header {
   width: 90%;
   max-width: 500px;
   background: linear-gradient(50deg, black, blue);
-  margin: 100px auto 0;
+  margin: 250px auto 0;
   border-radius: 20px;
   padding: 60px 35px;
   text-align: center;
