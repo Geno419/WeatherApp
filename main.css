@@ -1,22 +1,21 @@
-*{
+* {
   margin: 0;
-  color: white;
   font-family: Arial, Helvetica, sans-serif;
 }
- 
-body{
-background-color: white;
+
+body {
+  background-color: white;
 }
- 
-header{
+
+header {
   width: 100%;
   background-color: rgba(13, 13, 107, 0.979);
   padding: 20px;
   text-align: center;
   font-size: 50px;
 }
-  
-.card{
+
+.card {
   width: 90%;
   max-width: 500px;
   background: linear-gradient(50deg, black, blue);
@@ -26,32 +25,56 @@ header{
   text-align: center;
 }
 
-.searchBarContainer{
+.searchBarContainer {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 50%;
-  margin: 0 auto 0;
-}
-.searchBarContainer input{
-  color: black;
-  border: 0;
-  outline: 0;
-  border-radius: 20px;
-  padding: 10px, 25px;
-  margin-right: 16px;
-  height: 20px;
+  margin: 0 auto;
 }
 
-.searchBarContainer button{
+.searchBarContainer input {
+  color: black; 
+  border: 0;
+  outline: 0;
+  color: black;
+  border-radius: 20px;
+  padding: 10px 25px; /* Corrected padding values */
+  margin-right: 16px;
+  height: 0px;
+}
+
+.searchBarContainer button {
   border: 0;
   outline: 0;
   border-radius: 50%;
-  width: 20px;
+  width: 60px;
   height: 20px;
   padding: 0;
+  cursor: pointer; /* added the pointer cursor to the button */
 }
 
-.searchBarContainer button img{
-  width: 20px;
+.searchBarContainer button img {
+  width: 16px;
+}
+
+.locationInfo{
+  color: white;
+  display: flex; /* put the locationName and image side by side*/
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin: 30px auto 0; /* spacing of the locationinfo div*/
+}
+
+.minMaxTemp{
+  color: white;
+  display: flex; /* put the min/ max side by side*/
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin: 0 auto 0; 
+}
+.minTemp{
+  margin-right: 10px;
 }
