@@ -3,69 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="main.js"></script>
   <link rel="stylesheet" type="text/css" href="main.css">
   <title>The Weather App</title>
 </head>
 <body>
-  <header class="header">Weather App</header>
+  <header class="header">Weather & Time App</header> <!-- added time -->
   <section class="card">
     <div class="searchBarContainer">
-      <input type="text"    placeholder="Enter Your Location">
+      <input type="text" placeholder="Enter Your Location">
       <button type="submit"> 
         <img src="images/searchButton.png" alt="searchButton">
       </button>
-   
-   </div>
+    </div>
 
-<<<<<<< HEAD
-   <div class="locationInfo">
-    <section>
-      <img src="" alt="weatherImg">
-    </section>
-    <aside>
-      <p class="temp"> 15&#8451; </p>
-=======
     <div class="locationInfo">
       <section>
-        <p class="location"> ___</p> <!-- added a location tag that will be over the image --> 
-        <img src="" alt="weatherImg">
+        <p class="location"></p> <!-- added a location tag that will be over the image --> 
+        <img src="" alt="There should be an image here">
       </section>
       <aside>
-        <p class="temp">15&#8451;</p>
+        <p class="temp"></p>
         <div class="minMaxTemp">
-          <p class="minTemp">min:-2&#8451, </p>
-          <p class="maxTemp">max:6&#8451</p>
+          <p class="minTemp"></p>
+          <p class="maxTemp"></p>
         </div>
-        <p class="weatherDesc">Cloudy</p>
-        <p class="humidity">90&#37;</p>
-    <p class="date"> 
-      <script> 
-    document.querySelector('.date').innerHTML= new Date().toLocaleDateString('en-GB', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
-    </script>
-    </p> <!-- ...gets the date... --> 
->>>>>>> parent of 4e3f8cc (major improvements with the time)
+        <p class="weatherDesc"></p>
+        <p class="humidity"></p>
+    <p class="date"> </p> <!-- ...gets the date... --> 
 
-      <p class="weatherDesc"> Cloudy </p>
 
-      <div class="minMaxTemp">
-
-        <p class="minTemp"> -2&#8451;</p>
-
-        <p class="maxTemp"> 6&#8451;</p>
-
-      </div>
-      <p class="humidity">90&#37;</p>
-
-      <p class="date"> 
-       9/11/2001
-        <script>
-          const date = new Date();
-        </script>
-      </p>
-  
-    </aside>
-   </div>
+      </aside>
+    </div>
   </section>
+  <script src="main.js"></script>
 </body>
 </html>
