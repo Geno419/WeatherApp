@@ -3,20 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="main.js"></script>
   <link rel="stylesheet" type="text/css" href="main.css">
   <title>The Weather App</title>
 </head>
 <body>
-  <header class="header">Weather App</header>
+  <header class="header">Weather & Time App</header> <!-- added time -->
   <section class="card">
-    <div class="searchBarContainer">
-      <input type="text"    placeholder="Enter Your Location">
+    <div class="searchBarContainer"><input type="text"    placeholder="Enter Your Location">
       <button type="submit"> 
         <img src="images/searchButton.png" alt="searchButton">
       </button>
-   
-   </div>
+    </div>
 
    <div class="locationInfo">
     <section>
@@ -33,18 +30,15 @@
 
         <p class="maxTemp"> 6&#8451;</p>
 
+        <p class="humidity">90&#37;</p>
+        
       </div>
-      <p class="humidity">90&#37;</p>
-
-      <p class="date"> 
-       9/11/2001
-        <script>
-          const date = new Date();
-        </script>
-      </p>
-  
+      
+        
+    
     </aside>
    </div>
   </section>
+  <script src="main.js"></script>
 </body>
 </html>
