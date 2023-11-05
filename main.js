@@ -10,7 +10,7 @@ async function checkWeather(city){
     
     console.log(data);
 
-    document.querySelector(".location").innerHTML= data.name;
+   // document.querySelector(".location").innerHTML= data.name;//
     document.querySelector(".temp").innerHTML= Math.round(data.main.temp) + '&#8451';
     document.querySelector(".maxTemp").innerHTML= data.wind.speed + '&#37';
     document.querySelector(".minTemp").innerHTML= 'min: ' + data.main.temp_min + '&#8451 ';

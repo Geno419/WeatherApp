@@ -8,18 +8,21 @@
 </head>
 <body>
   <header class="header">Weather & Time App</header> <!-- added time -->
-  <section class="card">
+  <section class="body">
+    <div class="card">
     <div class="searchBarContainer">
       <input type="text" placeholder="Enter Your Location">
       <button type="submit"> 
-        <img src="images/searchButton.png" alt="searchButton">
+        <img src="icons/searchButton.png" alt="searchButton">
       </button>
     </div>
 
     <div class="locationInfo">
       <section>
-        <p class="location"></p> <!-- added a location tag that will be over the image --> 
-        <img src="" alt="There should be an image here">
+       <!-- added a location tag that will be over the image --> 
+       <p class="weatherDesc"></p>
+        <img src="images/cloudy.png" alt="There should be an image here">
+
       </section>
       <aside>
         <p class="temp"></p>
@@ -27,12 +30,12 @@
           <p class="minTemp"></p>
           <p class="maxTemp"></p>
         </div>
-        <p class="weatherDesc"></p>
         <p class="humidity"></p>
     <p class="date"> </p> <!-- ...gets the date... --> 
 
 
       </aside>
+    </div>
     </div>
   </section>
   <script src="main.js"></script>

@@ -4,7 +4,8 @@
 }
 
 body {
-  background-color: white;
+  background-color: white; 
+  overflow: hidden;
 }
 
 header {
@@ -13,6 +14,14 @@ header {
   padding: 20px;
   text-align: center;
   font-size: 50px;
+  color: white;
+}
+
+.body {
+  height: 100vh;
+  background: linear-gradient(0deg, blue, #959292);
+  padding: 60px 35px;
+  text-align: center;
 }
 
 .card {
@@ -78,3 +87,16 @@ header {
 .minTemp{
   margin-right: 10px; /* puts a space between them min/max side by side*/
 }
+
+.locationInfo img{
+  height: 80px;
+}
+
+.locationInfo aside p{
+  padding: 4px;
+}
+
+.locationInfo section{
+  padding-right: 16px;
+}
+
