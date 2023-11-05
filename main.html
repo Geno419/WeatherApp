@@ -18,12 +18,33 @@
    
    </div>
 
+<<<<<<< HEAD
    <div class="locationInfo">
     <section>
       <img src="" alt="weatherImg">
     </section>
     <aside>
       <p class="temp"> 15&#8451; </p>
+=======
+    <div class="locationInfo">
+      <section>
+        <p class="location"> ___</p> <!-- added a location tag that will be over the image --> 
+        <img src="" alt="weatherImg">
+      </section>
+      <aside>
+        <p class="temp">15&#8451;</p>
+        <div class="minMaxTemp">
+          <p class="minTemp">min:-2&#8451, </p>
+          <p class="maxTemp">max:6&#8451</p>
+        </div>
+        <p class="weatherDesc">Cloudy</p>
+        <p class="humidity">90&#37;</p>
+    <p class="date"> 
+      <script> 
+    document.querySelector('.date').innerHTML= new Date().toLocaleDateString('en-GB', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+    </script>
+    </p> <!-- ...gets the date... --> 
+>>>>>>> parent of 4e3f8cc (major improvements with the time)
 
       <p class="weatherDesc"> Cloudy </p>
 

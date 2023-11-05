@@ -52,6 +52,32 @@ header{
   padding: 0;
 }
 
+<<<<<<< HEAD
 .searchBarContainer button img{
   width: 20px;
+=======
+.searchBarContainer button img {
+  width: 16px;
+}
+
+.locationInfo{
+  color: white;
+  display: flex; /* put the locationName and image side by side*/
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin: 30px auto 0; /* spacing of the locationinfo div*/
+}
+
+.minMaxTemp{
+  color: white;
+  display: flex; /* put the min/ max side by side*/
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin: 0 auto 0; 
+}
+.minTemp{
+  margin-right: 10px;
+>>>>>>> parent of 4e3f8cc (major improvements with the time)
 }
