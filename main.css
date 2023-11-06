@@ -4,13 +4,13 @@
 }
 
 body {
-  background-color: white; 
+  background-color: white;
   overflow: hidden;
 }
 
 header {
   width: 100%;
-  background-color: rgba(13, 13, 107, 0.979);
+  background-color: #959292;
   padding: 20px;
   text-align: center;
   font-size: 50px;
@@ -19,7 +19,7 @@ header {
 
 .body {
   height: 100vh;
-  background: linear-gradient(0deg, blue, #959292);
+  background: linear-gradient(#959292, #959292, blue, black, black);
   padding: 60px 35px;
   text-align: center;
 }
@@ -27,76 +27,94 @@ header {
 .card {
   width: 90%;
   max-width: 500px;
-  background: linear-gradient(50deg, black, blue);
+  background: linear-gradient(#959292, blue);
   margin: 100px auto 0;
   border-radius: 20px;
   padding: 60px 35px;
   text-align: center;
 }
 
-.searchBarContainer {
+.searchBar {
   display: flex;
-  justify-content: center;
   align-items: center;
   width: 50%;
   margin: 0 auto;
 }
 
-.searchBarContainer input {
-  color: black; 
+.searchBar input {
+  color: black;
   border: 0;
   outline: 0;
   color: black;
-  border-radius: 20px;
-  padding: 10px 25px; /* Corrected padding values */
-  margin-right: 16px;
+  border-radius: 10px 0 0 10px;
+  padding: 10px 25px;
   height: 0px;
+  transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.searchBarContainer button {
+.searchBar input:focus {
+  border-radius: 0;
+  border: 3px solid black;
+}
+
+.searchBar input:is(:focus, :valid) ~ label {
+  transform: translateY(-100%) scale(1.2);
+  padding-inline: 0.3rem;
+  color: white;
+}
+
+.searchBar label {
+  position: absolute;
+  color: black;
+  padding-left: 10px;
+  transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.searchBar button {
   border: 0;
+  background-color: white;
   outline: 0;
-  border-radius: 50%;
+  border-radius: 0 50% 50% 0;
   width: 60px;
   height: 20px;
   padding: 0;
-  cursor: pointer; /* added the pointer cursor to the button */
+  cursor: pointer;
 }
 
-.searchBarContainer button img {
+.searchBar button img {
   width: 16px;
 }
 
-.locationInfo{
+.locationInfo {
   color: white;
-  display: flex; /* puts the locationName and image side by side*/
+  display: flex;
   justify-content: center;
   align-items: center;
   width: 50%;
-  margin: 30px auto 0; /* spacing of the locationinfo div from the top*/
+  margin: 30px auto 0;
 }
 
-.minMaxTemp{
+.minMaxTemp {
   color: white;
-  display: flex; /* puts the min/max side by side*/
+  display: flex;
   justify-content: center;
   align-items: center;
   width: 50%;
-  margin: 0 auto 0; 
-}
-.minTemp{
-  margin-right: 10px; /* puts a space between them min/max side by side*/
+  margin: 0 auto 0;
 }
 
-.locationInfo img{
+.minTemp {
+  margin-right: 10px;
+}
+
+.locationInfo img {
   height: 80px;
 }
 
-.locationInfo aside p{
+.locationInfo aside p {
   padding: 4px;
 }
 
-.locationInfo section{
+.locationInfo section {
   padding-right: 16px;
 }
-

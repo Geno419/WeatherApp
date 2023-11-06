@@ -7,35 +7,34 @@
   <title>The Weather App</title>
 </head>
 <body>
-  <header class="header">Weather & Time App</header> <!-- added time -->
+  <header class="header">
+    Locations <br> Weather & Time
+  </header>
   <section class="body">
     <div class="card">
-    <div class="searchBarContainer">
-      <input type="text" placeholder="Enter Your Location">
-      <button type="submit"> 
-        <img src="icons/searchButton.png" alt="searchButton">
-      </button>
-    </div>
+      <div class="searchBar">
+        <input required type="text">
+        <label for="location">Location</label>
+        <button type="submit"> 
+          <img src="icons/searchButton.png" alt="Search Button">
+        </button>
+      </div>
 
-    <div class="locationInfo">
-      <section>
-       <!-- added a location tag that will be over the image --> 
-       <p class="weatherDesc"></p>
-        <img src="images/cloudy.png" alt="There should be an image here">
-
-      </section>
-      <aside>
-        <p class="temp"></p>
-        <div class="minMaxTemp">
-          <p class="minTemp"></p>
-          <p class="maxTemp"></p>
-        </div>
-        <p class="humidity"></p>
-    <p class="date"> </p> <!-- ...gets the date... --> 
-
-
-      </aside>
-    </div>
+      <div class="locationInfo">
+        <section>
+          <p class="weatherDesc"></p>
+          <img class="weatherIcon" src="">
+        </section>
+        <aside>
+          <p class="temp"></p>
+          <div class="minMaxTemp">
+            <p class="minTemp"></p>
+            <p class="maxTemp"></p>
+          </div>
+          <p class="humidity"></p>
+          <p class="date"></p>
+        </aside>
+      </div>
     </div>
   </section>
   <script src="main.js"></script>
