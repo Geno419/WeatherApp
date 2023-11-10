@@ -3,7 +3,10 @@ const apiKey = "7af2e81ac3d7e59d7be831cd65898d46";
 
 const locationSearch = document.querySelector(".searchBar input");
 const searchBtn = document.querySelector(".searchBar button");
-
+function caps(string){
+  const arr = string.split(' ')
+   return arr[0].charAt(0).toUpperCase()+arr[0].slice(1) + ' ' + arr[1].charAt(0).toUpperCase()+arr[1].slice(1);
+}
 async function checkWeather(city){
     const response = await fetch(apiUrl + city + '&appid=' + apiKey);
     let data = await response.json();
@@ -11,11 +14,10 @@ async function checkWeather(city){
     console.log(data);
     
     document.querySelector(".temp").innerHTML= Math.round(data.main.temp) + '&#8451';
-    document.querySelector(".maxTemp").innerHTML= data.wind.speed + '&#37';
-    document.querySelector(".minTemp").innerHTML= 'min: ' + data.main.temp_min + '&#8451 ';
-    document.querySelector(".maxTemp").innerHTML= 'max: ' + data.main.temp_max + '&#8451';
+    document.querySelector(".minTemp").innerHTML= 'Min: ' + data.main.temp_min + '&#8451 ';
+    document.querySelector(".maxTemp").innerHTML= 'Max: ' + data.main.temp_max + '&#8451';
     document.querySelector(".humidity").innerHTML= data.main.humidity + '&#37';
-    document.querySelector(".weatherDesc").innerHTML= data.weather[0].description;
+    document.querySelector(".weatherDesc").innerHTML= caps(data.weather[0].description);
 
     let weatherMain = data.weather[0].main.toLowerCase();
     document.querySelector(".weatherIcon").src = 'images/' + weatherMain + '.png'
@@ -44,4 +46,4 @@ searchBtn.addEventListener("click", ()=>{
     checkWeather(locationSearch.value);
 })
 
-checkWeather('');
+checkWeather('United Kingdom');

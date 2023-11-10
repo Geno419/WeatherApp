@@ -50,11 +50,7 @@ header {
   padding: 10px 25px;
   height: 0px;
   transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.searchBar input:focus {
-  border-radius: 0;
-  border: 3px solid black;
+  z-index: 10;
 }
 
 .searchBar input:is(:focus, :valid) ~ label {
@@ -90,8 +86,11 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50%;
+  width: 80%;
   margin: 30px auto 0;
+}
+.locationInfo aside *{
+  margin: 0 auto;
 }
 
 .minMaxTemp {
@@ -101,6 +100,7 @@ header {
   align-items: center;
   width: 50%;
   margin: 0 auto 0;
+  font-size: 12px;
 }
 
 .minTemp {
@@ -117,4 +117,19 @@ header {
 
 .locationInfo section {
   padding-right: 16px;
+}
+
+.humidityContainer {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.humidityContainer img{
+  height: 30px;
+  margin-left: 10px;
+}
+.temp{
+
+  font-size: 30px;
 }

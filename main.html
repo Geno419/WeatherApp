@@ -13,8 +13,8 @@
   <section class="body">
     <div class="card">
       <div class="searchBar">
-        <input required type="text">
-        <label for="location">Location</label>
+        <input placeholder="Enter Your Location" required type="text">
+        <label for="location"> Location</label>
         <button type="submit"> 
           <img src="icons/searchButton.png" alt="Search Button">
         </button>
@@ -24,6 +24,10 @@
         <section>
           <p class="weatherDesc"></p>
           <img class="weatherIcon" src="">
+          <div class="humidityContainer">
+            <p class="humidity"></p>
+            <img src="images/humidity.png" alt="">
+          </div>
         </section>
         <aside>
           <p class="temp"></p>
@@ -31,7 +35,6 @@
             <p class="minTemp"></p>
             <p class="maxTemp"></p>
           </div>
-          <p class="humidity"></p>
           <p class="date"></p>
         </aside>
       </div>
