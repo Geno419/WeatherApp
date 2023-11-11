@@ -17,6 +17,7 @@ async function checkWeather(city){
     document.querySelector(".minTemp").innerHTML= 'Min: ' + data.main.temp_min + '&#8451 ';
     document.querySelector(".maxTemp").innerHTML= 'Max: ' + data.main.temp_max + '&#8451';
     document.querySelector(".humidity").innerHTML= data.main.humidity + '&#37';
+    document.querySelector(".humidityIcon").src= "images/humidity.png";
     document.querySelector(".weatherDesc").innerHTML= caps(data.weather[0].description);
 
     let weatherMain = data.weather[0].main.toLowerCase();
@@ -46,4 +47,4 @@ searchBtn.addEventListener("click", ()=>{
     checkWeather(locationSearch.value);
 })
 
-checkWeather('United Kingdom');
+checkWeather('london');
