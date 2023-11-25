@@ -44,4 +44,4 @@ searchBtn.addEventListener("click", ()=>{
     checkWeather(locationSearch.value);
 })
 
-checkWeather('london');
+checkWeather('');
