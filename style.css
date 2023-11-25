@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+
+}
+
+body {
+  background-color: white;
+  overflow: hidden;
+}
+
+header {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  font-size: 50px;
+}
+
+body {
+  background-image: url(images/sky.jpg);
+}
+
+.card {
+  width: 90%;
+  max-width: 500px;
+  background: linear-gradient(90deg, rgb(31, 30, 30),blue, rgb(31, 30, 30));
+  margin: 100px auto 0;
+  border-radius: 25%;
+  border: 25px ridge;
+  padding: 60px 35px;
+  text-align: center;
+}
+
+.searchBar {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.searchBar input {
+  color: black;
+  border: 0;
+  outline: 0;
+  color: black;
+  border-radius: 10px 0 0 10px;
+  padding: 10px 25px;
+  height: 0px;
+  transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 10;
+}
+
+.searchBar input:is(:focus, :valid) ~ label {
+  transform: translateY(-100%) scale(1.2);
+  padding-inline: 0.3rem;
+}
+
+.searchBar label {
+  position: absolute;
+  padding-left: 10px;
+  transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.searchBar button {
+  border: 0;
+  background-color: white;
+  outline: 0;
+  border-radius: 0 50% 50% 0;
+  width: 60px;
+  height: 20px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.searchBar button img {
+  width: 16px;
+}
+
+.locationInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin: 30px auto 0;
+  padding-bottom: 16px;
+}
+
+.locationInfo section {
+  padding-right: 16px;
+}
+
+.weatherIcon{
+  height: 80px;
+}
+
+.temp{
+  font-size: 50px;
+}
+
+.minMaxTemp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin: 0 auto 0;
+  font-size: 12px;
+}
+
+.minTemp {
+  margin-right: 10px;
+}

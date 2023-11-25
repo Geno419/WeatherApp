@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>The Weather App</title>
+</head>
+<body>
+  <header class="header">
+    Weather & Time <br> App
+  </header>
+
+
+    <div class="card">
+      <div class="searchBar">
+        <input placeholder="Enter Your Location" required type="text">
+        <label for="location"> Location</label>
+        <button type="submit"> 
+          <img src="images/searchButton.png" alt="Search Button">
+        </button>
+      </div>
+      <div class="locationInfo">
+
+        <section>          
+          <img class="weatherIcon">
+          <p class="weatherDesc"></p>
+        </section>
+
+        <aside>
+          <p class="temp"></p>
+          <div class="minMaxTemp">
+            <p class="minTemp"></p>
+            <p class="maxTemp"></p>
+          </div>
+        </aside>
+        
+      </div>
+      <p class="date"></p>
+
+    </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
