@@ -2,7 +2,6 @@
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   color: white;
-
 }
 
 body {
@@ -24,7 +23,7 @@ body {
 .card {
   width: 90%;
   max-width: 500px;
-  background: linear-gradient(90deg, rgb(31, 30, 30),blue, rgb(31, 30, 30));
+  background: linear-gradient(90deg, rgb(31, 30, 30), blue, rgb(31, 30, 30));
   margin: 100px auto 0;
   border-radius: 25%;
   border: 25px ridge;
@@ -90,11 +89,11 @@ body {
   padding-right: 16px;
 }
 
-.weatherIcon{
+.weatherIcon {
   height: 80px;
 }
 
-.temp{
+.temp {
   font-size: 50px;
 }
 
